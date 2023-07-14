@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <title>Website Saya</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <button id="toTopButton" class="button-pencet">
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+    <audio id="background-music" autoplay loop>
+      <source src="music/bg-music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button id="play-pause-button" class="button-pencet">
+      <i id="play-icon" class="fa-solid fa-circle-play"></i>
+      <i class="fa-solid fa-circle-pause" id="pause-icon"></i>
+      <div class="song">song</div>
+    </button>
+
+    <section class="fullscreen-bg">
+      <img
+        src="img/home.jpg"
+        alt="Background Image"
+        class="fullscreen-bg-image"
+      />
+      <div class="welcome-text hidden">
+        <div class="nama-awal">
+          <p id="orang1" class="isi-konten1">Emir</p>
+          <p id="danAwal" class="isi-konten1">&</p>
+          <p id="orang2" class="isi-konten1">Someone</p>
+        </div>
+
+        <div class="tag isi-konten1">
+          you and me together and forever!
+          <p>11 September 2023</p>
+        </div>
+        <a href="#main-text" class="btn btn-primary isi-konten1" id="btnHome"
+          >Buka Undangan</a
+        >
+      </div>
+    </section>
+    <section class="fullscreen-bg fullscreen-bg2" id="main-text">
+      <img
+        src="img/home2.jpg"
+        alt="Background Image"
+        class="fullscreen-bg-image"
+      />
+      <div class="container content2 hidden" id="pembuka">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="main-text">Assalamu'alaikum</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p class="opening">
+              "Bagaimana kamu akan mengambilnya kembali, padahal sebagian kamu
+              telah bergaul (bercampur) dengan yang lain sebagai suami-isteri.
+              Dan mereka (isteri-isterimu) telah mengambil dari kamu perjanjian
+              yang kuat." (QS An-Nisa: 21).
+            </p>
+            <p class="opening">
+              Maha suci Allah SWT yang telah menciptakan makhluk-makhluk
+              ciptaan-Nya berpasang-pasangan. Ya Allah, izinkanlah kami untuk
+              merangkai jalinan kasih di bawah ridho-Mu, berikanlah kami
+              kesempatan untuk menjalin kasih sayang yang kau ciptakan di antara
+              putra-putri kami.
+            </p>
+          </div>
+        </div>
+        <div class="row konten-mempelai">
+          <div class="col">
+            <div class="container w-70">
+              <img
+                src="img/cowo.jpg"
+                width="100px"
+                class="rounded-circle pic-mempelai"
+                alt="..."
+              />
+              <h1 class="nama pt-3" id="nama">Muhamad Emir Samuel</h1>
+              <h4 class="ortu" id="ortu">Putra dari bapak Jayono & ibu Tini</h4>
+            </div>
+          </div>
+          <div class="col-1">
+            <p class="dan">&</p>
+          </div>
+          <div class="col">
+            <div class="container w-70">
+              <img
+                src="img/cewe.jpg"
+                width="100px"
+                class="rounded-circle pic-mempelai"
+                alt="..."
+              />
+              <h1 class="nama pt-3" id="nama">Seseorang yg blm kutmkn</h1>
+              <h4 class="ortu" id="ortu">Putra dari bapak ___ & ibu ___</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fullscreen-bg fullscreen-bg2">
+      <img
+        src="img/home2.jpg"
+        alt="Background Image"
+        class="fullscreen-bg-image fullscreen-bg-image2"
+      />
+      <div class="container content2 hidden" id="pembuka">
+        <div class="row">
+          <div class="col text-center">
+            <p class="opening">
+              <span id="dnyaaja">D</span>engan rahmat dan rida Allah SWT, kami
+              bermaksud mengundang Bapak/Ibu/Saudara ke acara pernikahan kami.
+              InsyaAllah acara pernikahan ini akan berlangsung pada:
+            </p>
+          </div>
+        </div>
+        <div class="row acara">
+          <div class="col">
+            <div class="row">
+              <div class="row title-acara text-center">
+                <h1>Akad Nikah</h1>
+              </div>
+              <div class="row opening">
+                <p>Selasa, 11 September 2023</p>
+                <p>Pukul 07.00 WIB sd Selesai</p>
+                <p>World Trade Center. New York, USA</p>
+                <p>
+                  <a
+                    href="https://goo.gl/maps/11yEbKVqVgUjuo4d7"
+                    class="btn btn-light"
+                    ><i class="fa-solid fa-location-dot"></i> Lihat lokasi</a
+                  >
+                </p>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="p-1 countdown" id="countdown"></div>
+              </div>
+            </div>
+            <div class="row"></div>
+          </div>
+          <div
+            class="col-1 d-flex justify-content-center align-self-center tengah-acara"
+          >
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="img/gallery/tengah2.png"
+              />
+              <img src="img/gallery/tengah.png" alt="" />
+            </picture>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="row title-acara text-center">
+                <h1>Resepsi</h1>
+              </div>
+              <div class="row opening">
+                <p>Jum'at, 13 September 2023</p>
+                <p>Pukul 07.00 WIB sd Selesai</p>
+                <p>Area 51. Nevada, USA</p>
+                <p>
+                  <a
+                    href="https://goo.gl/maps/Hny8ArjwjdzyRyTv7"
+                    class="btn btn-light"
+                    ><i class="fa-solid fa-location-dot"></i> Lihat lokasi</a
+                  >
+                </p>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="p-1 countdown" id="countdown2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-gallery">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="main-text hidden">Gallery</h1>
+            <div class="bawah-main-text hidden">
+              <img src="img/gallery/galeri.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class="gallery1">
+              <img class="hidden" src="img/gallery/3.jpg" alt="" />
+              <img class="hidden" src="img/gallery/2.jpg" alt="" />
+            </div>
+            <div class="gallery1">
+              <img class="hidden" src="img/gallery/1.jpg" alt="" />
+              <img class="hidden" src="img/gallery/4.jpg" alt="" />
+            </div>
+            <div class="gallery1">
+              <img class="hidden" src="img/gallery/5.jpg" alt="" />
+              <img class="hidden" src="img/gallery/6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bawah-main-text hidden">
+          <img src="img/gallery/galeri.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ebc309096d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
