@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: black;
-  /* min-height: 6000px; */
+  min-height: 6000px;
 }
 
 /* CSS untuk background gambar */
@@ -279,6 +279,54 @@ body {
 
 .bawah-main-text img {
   width: 300px;
+}
+
+.container-form{
+  width: 450px;
+}
+
+.form{
+  font-family: serif;
+}
+
+.form input::placeholder, .form textarea::placeholder{
+  color: gold;
+}
+
+.form input:focus, .form textarea:focus{
+  background: rgba(255, 255, 255, 0.4);
+  color: gold;
+}
+
+.form input, .form textarea{
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid gold;
+  transition: all 0.4s;
+}
+
+.form input[type='radio']{
+  padding: 3px;
+}
+
+.form input[type='radio']:checked{
+  background: gold;
+  border: 1px solid gold;
+}
+
+.btn-submit{
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+
+.btn-submit:hover{
+  transform: scale(1.2);
+  border-bottom: 2px solid gold;
+  color: gold;
 }
 
 /* .isi-konten1:nth-child(2){
