@@ -11,9 +11,6 @@ window.addEventListener("scroll", function () {
     // Hide the button
     button.style.animation = "myAnimation2 0.5s ease-in forwards";
   }
-
-  if (window.scrollY >= 0 && window.scrollY <= 441) {
-  }
 });
 
 var audio = document.getElementById("background-music");
